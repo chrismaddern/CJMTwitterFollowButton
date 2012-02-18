@@ -31,44 +31,44 @@
 
 -(id)initWithTwitterAccount:(NSString*)account atOrigin:(CGPoint)origin isSmallButton:(BOOL)isSmallButton
 {
-CGSize buttonSize;
-self.isSmall = isSmallButton;
-if(isSmallButton)
-buttonSize = CGSizeMake(61, 20);
-else 
-buttonSize = CGSizeMake(122, 40);
-
-self.twitterAccount = account; 
-CGRect buttonFrame = CGRectMake(origin.x, origin.y, buttonSize.width, buttonSize.height);
-self = [super initWithFrame:buttonFrame];
-if (self) 
-{
-    if(self.isSmall)
-        [self setBackgroundImage:[UIImage imageNamed:@"follow-me-small"] forState:UIControlStateNormal];
-    else
-        [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+    CGSize buttonSize;
+    self.isSmall = isSmallButton;
+    if(isSmallButton)
+        buttonSize = CGSizeMake(61, 20);
+    else 
+        buttonSize = CGSizeMake(122, 40);
     
-    [self addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
-}
-return self;
+    self.twitterAccount = account; 
+    CGRect buttonFrame = CGRectMake(origin.x, origin.y, buttonSize.width, buttonSize.height);
+    self = [super initWithFrame:buttonFrame];
+    if (self) 
+    {
+        if(self.isSmall)
+            [self setBackgroundImage:[UIImage imageNamed:@"follow-me-small"] forState:UIControlStateNormal];
+        else
+            [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+        
+        [self addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return self;
 }
 
 -(void)buttonTapped
 {
     NSArray *urls = [NSArray arrayWithObjects:
-                 @"twitter://user?screen_name={handle}", // Twitter
-                 @"tweetbot:///user_profile/{handle}", // TweetBot
-                 @"echofon:///user_timeline?{handle}", // Echofon              
-                 @"twit:///user?screen_name={handle}", // Twittelator Pro
-                 @"x-seesmic://twitter_profile?twitter_screen_name={handle}", // Seesmic
-                 @"x-birdfeed://user?screen_name={handle}", // Birdfeed
-                 @"tweetings:///user?screen_name={handle}", // Tweetings
-                 @"simplytweet:?link=http://twitter.com/{handle}", // SimplyTweet
-                 @"icebird://user?screen_name={handle}", // IceBird
-                 @"fluttr://user/{handle}", // Fluttr
-                 @"http://twitter.com/{handle}",
-                 nil];
-
+                     @"twitter://user?screen_name={handle}", // Twitter
+                     @"tweetbot:///user_profile/{handle}", // TweetBot
+                     @"echofon:///user_timeline?{handle}", // Echofon              
+                     @"twit:///user?screen_name={handle}", // Twittelator Pro
+                     @"x-seesmic://twitter_profile?twitter_screen_name={handle}", // Seesmic
+                     @"x-birdfeed://user?screen_name={handle}", // Birdfeed
+                     @"tweetings:///user?screen_name={handle}", // Tweetings
+                     @"simplytweet:?link=http://twitter.com/{handle}", // SimplyTweet
+                     @"icebird://user?screen_name={handle}", // IceBird
+                     @"fluttr://user/{handle}", // Fluttr
+                     @"http://twitter.com/{handle}",
+                     nil];
+    
     UIApplication *application = [UIApplication sharedApplication];
     
     for (NSString *candidate in urls) {
@@ -79,13 +79,13 @@ return self;
             return;
         }
     }
-
+    
 }
 
 -(void)setIsSmall:(BOOL)shouldBeSmall
 {
     isSmall = shouldBeSmall;
-
+    
     CGSize buttonSize;
     if(isSmall)
     {
