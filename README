@@ -8,6 +8,8 @@ This can be used in Interface Builder by adding a UIButton and changing it's cla
 
 Two size modes are available controlled by setting isSmallButton in the initialiser or by later change the isSmall property of the object.
 
+NOTE: This was created for use with ARC. It will leak if used in a non-ARC project.
+
 Pulled together by Chris Maddern
 http:www.chrismaddern.com
  
