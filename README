@@ -2,7 +2,7 @@ Follow Me Button for iOS
 
 A UIButton-based class which will open a Twitter profile in the user's Twitter App of choice (iOS5 Twitter functionality favoured).
 
-This can be used in Interface Builder by adding a UIButton and changing it's class to TwitterFollowButton or in code using the custom initialiser:
+This can be used in Interface Builder by adding a UIButton and changing it's class to FollowMeButton or in code using the custom initialiser:
 
 [self.view addSubview:[[FollowMeButton alloc] initWithTwitterAccount:@"chrismaddern" atOrigin:CGPointMake(205, 248) isSmallButton:YES]];
 

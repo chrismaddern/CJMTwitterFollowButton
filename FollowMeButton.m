@@ -20,7 +20,7 @@
 
 @interface FollowMeButton()
 
-@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) UIImageView *imageView;
 
 -(void)buttonTapped;
 @end
