@@ -20,7 +20,7 @@
 
 @interface FollowMeButton : UIButton
 
-@property (nonatomic, retain) NSString* twitterAccount;
+@property (nonatomic) NSString* twitterAccount;
 @property (nonatomic) BOOL isSmall;
 
 -(id)initWithTwitterAccount:(NSString*)account atOrigin:(CGPoint)origin isSmallButton:(BOOL)isSmallButton;
