@@ -110,6 +110,7 @@
     {
         [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, 122, 40)];
         [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+        [self addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
