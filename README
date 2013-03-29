@@ -8,10 +8,7 @@ This can be used in Interface Builder by adding a UIButton and changing it's cla
 
 Two size modes are available controlled by setting isSmallButton in the initialiser or by later change the isSmall property of the object.
 
-NOTE: This was created for use with ARC. It will leak if used in a non-ARC project.
-
-Pulled together by Chris Maddern
-http:www.chrismaddern.com
+NOTE: This was created for use with ARC. If you do not use ARC, then set the compiler flag '-fobjc-arc' on the file in the 'Compile Sources' build phase.
  
 This is basically several others' work pulled together to create a simple-to-include repo.
 
@@ -23,3 +20,5 @@ Created by vhbit
  
 Thanks to HandleOpenURL for documenting the Twitter iOS5 Scheme
 http:handleopenurl.com/scheme/twitter
+
+Released under the MIT License.
