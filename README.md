@@ -1,4 +1,5 @@
 Follow Me Button for iOS
+========================
 
 A UIButton-based class which will open a Twitter profile in the user's Twitter App of choice (iOS5 Twitter functionality favoured).
 
