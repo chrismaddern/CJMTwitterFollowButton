@@ -2,18 +2,16 @@
 
 A `UIButton` subclass which mimics the Twitter follow button and will open the profile of the configured user on whatever Twitter App is currently installed (native Twitter app preferred if installed).
 
-<center><img src="https://raw.github.com/chrismaddern/Follow-Me-On-Twitter-iOS-Button/master/follow-me.png" style="margin: 0 auto; " /></center>
+<center><img src="https://raw.github.com/chrismaddern/Follow-Me-On-Twitter-iOS-Button/master/CJMTwitterFollowButton/Resources/CJMFollowMeButtonSmall.png" style="margin: 0 auto; " /></center>
 
 ### Usage
-The `FollowMeButton` can be created in Interface Builder by adding a `UIButton` and changing it's class to `FollowMeButton` or in code using the custom initialiser:
+The `CJMTwitterFollowButton` can be created in Interface Builder by adding a `UIButton` and changing it's class to `CJMTwitterFollowButton` or in code using the initialiser:
 
 ```
-[self.view addSubview:[[FollowMeButton alloc] initWithTwitterAccount:@"chrismaddern" atOrigin:CGPointMake(205, 248) isSmallButton:YES]];
+CJMTwitterFollowButton *button = [[CJMTwitterFollowButton alloc] initWithOrigin:CGPointMake(135, 125)
+                                                                 twitterAccount:@"chrismaddern"
+                                                                        andSize:CJMButtonSizeSmall];
 ````
-
-Two size modes are available controlled by setting `isSmallButton` in the initialiser or by later change the `isSmall` property of the object.
-
-NOTE: This was created for use with ARC. If your project does not use ARC, then set the compiler flag `-fobjc-arc` on the file in the 'Compile Sources' build phase.
 
 ### Credits 
 This is basically several others' work pulled together to create a simple-to-include repo.
