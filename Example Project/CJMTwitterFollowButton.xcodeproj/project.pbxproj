@@ -16,25 +16,12 @@
 		C2DB079C186B4736000E45A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DB079A186B4736000E45A8 /* Main.storyboard */; };
 		C2DB079F186B4736000E45A8 /* CJMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB079E186B4736000E45A8 /* CJMViewController.m */; };
 		C2DB07A1186B4736000E45A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07A0186B4736000E45A8 /* Images.xcassets */; };
-		C2DB07A8186B4736000E45A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB07A7186B4736000E45A8 /* XCTest.framework */; };
-		C2DB07A9186B4736000E45A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB0788186B4736000E45A8 /* Foundation.framework */; };
-		C2DB07AA186B4736000E45A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB078C186B4736000E45A8 /* UIKit.framework */; };
-		C2DB07C5186B4750000E45A8 /* CJMTwitterFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB07BF186B4750000E45A8 /* CJMTwitterFollowButton.m */; };
-		C2DB07C6186B4750000E45A8 /* CJMFollowMeButtonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07C1186B4750000E45A8 /* CJMFollowMeButtonLarge.png */; };
-		C2DB07C7186B4750000E45A8 /* CJMFollowMeButtonLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07C2186B4750000E45A8 /* CJMFollowMeButtonLarge@2x.png */; };
-		C2DB07C8186B4750000E45A8 /* CJMFollowMeButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07C3186B4750000E45A8 /* CJMFollowMeButtonSmall.png */; };
-		C2DB07C9186B4750000E45A8 /* CJMFollowMeButtonSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07C4186B4750000E45A8 /* CJMFollowMeButtonSmall@2x.png */; };
+		C2DB07D2186B504E000E45A8 /* CJMTwitterFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB07CC186B504E000E45A8 /* CJMTwitterFollowButton.m */; };
+		C2DB07D3186B504E000E45A8 /* CJMFollowMeButtonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07CE186B504E000E45A8 /* CJMFollowMeButtonLarge.png */; };
+		C2DB07D4186B504E000E45A8 /* CJMFollowMeButtonLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07CF186B504E000E45A8 /* CJMFollowMeButtonLarge@2x.png */; };
+		C2DB07D5186B504E000E45A8 /* CJMFollowMeButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07D0186B504E000E45A8 /* CJMFollowMeButtonSmall.png */; };
+		C2DB07D6186B504E000E45A8 /* CJMFollowMeButtonSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB07D1186B504E000E45A8 /* CJMFollowMeButtonSmall@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C2DB07AB186B4736000E45A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C2DB077D186B4736000E45A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C2DB0784186B4736000E45A8;
-			remoteInfo = CJMTwitterFollowButton;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C2DB0785186B4736000E45A8 /* CJMTwitterFollowButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJMTwitterFollowButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,14 +38,13 @@
 		C2DB079D186B4736000E45A8 /* CJMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJMViewController.h; sourceTree = "<group>"; };
 		C2DB079E186B4736000E45A8 /* CJMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJMViewController.m; sourceTree = "<group>"; };
 		C2DB07A0186B4736000E45A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C2DB07A6186B4736000E45A8 /* CJMTwitterFollowButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJMTwitterFollowButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB07A7186B4736000E45A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C2DB07BE186B4750000E45A8 /* CJMTwitterFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMTwitterFollowButton.h; sourceTree = "<group>"; };
-		C2DB07BF186B4750000E45A8 /* CJMTwitterFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMTwitterFollowButton.m; sourceTree = "<group>"; };
-		C2DB07C1186B4750000E45A8 /* CJMFollowMeButtonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonLarge.png; sourceTree = "<group>"; };
-		C2DB07C2186B4750000E45A8 /* CJMFollowMeButtonLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonLarge@2x.png"; sourceTree = "<group>"; };
-		C2DB07C3186B4750000E45A8 /* CJMFollowMeButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonSmall.png; sourceTree = "<group>"; };
-		C2DB07C4186B4750000E45A8 /* CJMFollowMeButtonSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonSmall@2x.png"; sourceTree = "<group>"; };
+		C2DB07CB186B504E000E45A8 /* CJMTwitterFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMTwitterFollowButton.h; sourceTree = "<group>"; };
+		C2DB07CC186B504E000E45A8 /* CJMTwitterFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMTwitterFollowButton.m; sourceTree = "<group>"; };
+		C2DB07CE186B504E000E45A8 /* CJMFollowMeButtonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonLarge.png; sourceTree = "<group>"; };
+		C2DB07CF186B504E000E45A8 /* CJMFollowMeButtonLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonLarge@2x.png"; sourceTree = "<group>"; };
+		C2DB07D0186B504E000E45A8 /* CJMFollowMeButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonSmall.png; sourceTree = "<group>"; };
+		C2DB07D1186B504E000E45A8 /* CJMFollowMeButtonSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonSmall@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +55,6 @@
 				C2DB078B186B4736000E45A8 /* CoreGraphics.framework in Frameworks */,
 				C2DB078D186B4736000E45A8 /* UIKit.framework in Frameworks */,
 				C2DB0789186B4736000E45A8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2DB07A3186B4736000E45A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2DB07A8186B4736000E45A8 /* XCTest.framework in Frameworks */,
-				C2DB07AA186B4736000E45A8 /* UIKit.framework in Frameworks */,
-				C2DB07A9186B4736000E45A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				C2DB0785186B4736000E45A8 /* CJMTwitterFollowButton.app */,
-				C2DB07A6186B4736000E45A8 /* CJMTwitterFollowButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +92,7 @@
 		C2DB078E186B4736000E45A8 /* CJMTwitterFollowButton */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB07BD186B4750000E45A8 /* CJMFollowMeButton */,
+				C2DB07CA186B504E000E45A8 /* CJMTwitterFollowButton */,
 				C2DB0797186B4736000E45A8 /* CJMAppDelegate.h */,
 				C2DB0798186B4736000E45A8 /* CJMAppDelegate.m */,
 				C2DB079A186B4736000E45A8 /* Main.storyboard */,
@@ -140,24 +115,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C2DB07BD186B4750000E45A8 /* CJMFollowMeButton */ = {
+		C2DB07CA186B504E000E45A8 /* CJMTwitterFollowButton */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB07BE186B4750000E45A8 /* CJMTwitterFollowButton.h */,
-				C2DB07BF186B4750000E45A8 /* CJMTwitterFollowButton.m */,
-				C2DB07C0186B4750000E45A8 /* Resources */,
+				C2DB07CB186B504E000E45A8 /* CJMTwitterFollowButton.h */,
+				C2DB07CC186B504E000E45A8 /* CJMTwitterFollowButton.m */,
+				C2DB07CD186B504E000E45A8 /* Resources */,
 			);
-			name = CJMFollowMeButton;
-			path = ../../CJMFollowMeButton;
+			name = CJMTwitterFollowButton;
+			path = ../../CJMTwitterFollowButton;
 			sourceTree = "<group>";
 		};
-		C2DB07C0186B4750000E45A8 /* Resources */ = {
+		C2DB07CD186B504E000E45A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB07C1186B4750000E45A8 /* CJMFollowMeButtonLarge.png */,
-				C2DB07C2186B4750000E45A8 /* CJMFollowMeButtonLarge@2x.png */,
-				C2DB07C3186B4750000E45A8 /* CJMFollowMeButtonSmall.png */,
-				C2DB07C4186B4750000E45A8 /* CJMFollowMeButtonSmall@2x.png */,
+				C2DB07CE186B504E000E45A8 /* CJMFollowMeButtonLarge.png */,
+				C2DB07CF186B504E000E45A8 /* CJMFollowMeButtonLarge@2x.png */,
+				C2DB07D0186B504E000E45A8 /* CJMFollowMeButtonSmall.png */,
+				C2DB07D1186B504E000E45A8 /* CJMFollowMeButtonSmall@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -182,24 +157,6 @@
 			productReference = C2DB0785186B4736000E45A8 /* CJMTwitterFollowButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C2DB07A5186B4736000E45A8 /* CJMTwitterFollowButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2DB07BA186B4736000E45A8 /* Build configuration list for PBXNativeTarget "CJMTwitterFollowButtonTests" */;
-			buildPhases = (
-				C2DB07A2186B4736000E45A8 /* Sources */,
-				C2DB07A3186B4736000E45A8 /* Frameworks */,
-				C2DB07A4186B4736000E45A8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C2DB07AC186B4736000E45A8 /* PBXTargetDependency */,
-			);
-			name = CJMTwitterFollowButtonTests;
-			productName = CJMTwitterFollowButtonTests;
-			productReference = C2DB07A6186B4736000E45A8 /* CJMTwitterFollowButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,11 +166,6 @@
 				CLASSPREFIX = CJM;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Chris Maddern";
-				TargetAttributes = {
-					C2DB07A5186B4736000E45A8 = {
-						TestTargetID = C2DB0784186B4736000E45A8;
-					};
-				};
 			};
 			buildConfigurationList = C2DB0780186B4736000E45A8 /* Build configuration list for PBXProject "CJMTwitterFollowButton" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -229,7 +181,6 @@
 			projectRoot = "";
 			targets = (
 				C2DB0784186B4736000E45A8 /* CJMTwitterFollowButton */,
-				C2DB07A5186B4736000E45A8 /* CJMTwitterFollowButtonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,20 +190,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB07C7186B4750000E45A8 /* CJMFollowMeButtonLarge@2x.png in Resources */,
-				C2DB07C9186B4750000E45A8 /* CJMFollowMeButtonSmall@2x.png in Resources */,
-				C2DB07C8186B4750000E45A8 /* CJMFollowMeButtonSmall.png in Resources */,
+				C2DB07D4186B504E000E45A8 /* CJMFollowMeButtonLarge@2x.png in Resources */,
+				C2DB07D6186B504E000E45A8 /* CJMFollowMeButtonSmall@2x.png in Resources */,
+				C2DB07D5186B504E000E45A8 /* CJMFollowMeButtonSmall.png in Resources */,
 				C2DB07A1186B4736000E45A8 /* Images.xcassets in Resources */,
 				C2DB0793186B4736000E45A8 /* InfoPlist.strings in Resources */,
 				C2DB079C186B4736000E45A8 /* Main.storyboard in Resources */,
-				C2DB07C6186B4750000E45A8 /* CJMFollowMeButtonLarge.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2DB07A4186B4736000E45A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C2DB07D3186B504E000E45A8 /* CJMFollowMeButtonLarge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,26 +210,11 @@
 				C2DB0795186B4736000E45A8 /* main.m in Sources */,
 				C2DB079F186B4736000E45A8 /* CJMViewController.m in Sources */,
 				C2DB0799186B4736000E45A8 /* CJMAppDelegate.m in Sources */,
-				C2DB07C5186B4750000E45A8 /* CJMTwitterFollowButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2DB07A2186B4736000E45A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C2DB07D2186B504E000E45A8 /* CJMTwitterFollowButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C2DB07AC186B4736000E45A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C2DB0784186B4736000E45A8 /* CJMTwitterFollowButton */;
-			targetProxy = C2DB07AB186B4736000E45A8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C2DB0791186B4736000E45A8 /* InfoPlist.strings */ = {
@@ -405,48 +334,6 @@
 			};
 			name = Release;
 		};
-		C2DB07BB186B4736000E45A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJMTwitterFollowButton.app/CJMTwitterFollowButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJMTwitterFollowButton/CJMTwitterFollowButton-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CJMTwitterFollowButtonTests/CJMTwitterFollowButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C2DB07BC186B4736000E45A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CJMTwitterFollowButton.app/CJMTwitterFollowButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CJMTwitterFollowButton/CJMTwitterFollowButton-Prefix.pch";
-				INFOPLIST_FILE = "CJMTwitterFollowButtonTests/CJMTwitterFollowButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,15 +351,6 @@
 			buildConfigurations = (
 				C2DB07B8186B4736000E45A8 /* Debug */,
 				C2DB07B9186B4736000E45A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C2DB07BA186B4736000E45A8 /* Build configuration list for PBXNativeTarget "CJMTwitterFollowButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C2DB07BB186B4736000E45A8 /* Debug */,
-				C2DB07BC186B4736000E45A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
