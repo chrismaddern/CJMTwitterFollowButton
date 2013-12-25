@@ -18,10 +18,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FollowMeButton : UIButton
+typedef enum {
+    CJMButtonSizeSmall = 0,
+    CJMButtonSizeLarge = 1
+} CJMTwitterFollowButtonSize;
 
-@property (nonatomic) NSString* twitterAccount;
-@property (nonatomic) BOOL isSmall;
+@interface CJMTwitterFollowButton : UIButton
 
--(id)initWithTwitterAccount:(NSString*)account atOrigin:(CGPoint)origin isSmallButton:(BOOL)isSmallButton;
+@property (nonatomic, strong) NSString *twitterAccount;
+@property (nonatomic) CJMTwitterFollowButtonSize buttonSize;
+
+- (instancetype)initWithOrigin:(CGPoint)origin
+               twitterAccount:(NSString *)twitterAccount
+                      andSize:(CJMTwitterFollowButtonSize)size;
 @end

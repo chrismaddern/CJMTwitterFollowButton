@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>456256BE-458F-46FC-9A7C-731D66A7EC37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CJMTwitterFollowButton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BD053651-AA18-4D0F-9A77-52536C70A0E5</key>
+		<string>ssh://github.com/chrismaddern/Follow-Me-On-Twitter-iOS-Button.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CJMTwitterFollowButton/CJMTwitterFollowButton.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BD053651-AA18-4D0F-9A77-52536C70A0E5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chrismaddern/Follow-Me-On-Twitter-iOS-Button.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BD053651-AA18-4D0F-9A77-52536C70A0E5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BD053651-AA18-4D0F-9A77-52536C70A0E5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Follow-Me-On-Twitter-iOS-Button</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -16,45 +16,28 @@
 //  http://handleopenurl.com/scheme/twitter
 //
 
-#import "FollowMeButton.h"
+#import "CJMTwitterFollowButton.h"
 
-@interface FollowMeButton()
+@implementation CJMTwitterFollowButton
 
-@property (nonatomic) UIImageView *imageView;
-
--(void)buttonTapped;
-@end
-
-@implementation FollowMeButton
-
-@synthesize imageView, twitterAccount, isSmall;
-
--(id)initWithTwitterAccount:(NSString*)account atOrigin:(CGPoint)origin isSmallButton:(BOOL)isSmallButton
-{
-    CGSize buttonSize;
-    self.isSmall = isSmallButton;
-    if(isSmallButton)
-        buttonSize = CGSizeMake(61, 20);
-    else 
-        buttonSize = CGSizeMake(122, 40);
+- (instancetype)initWithOrigin:(CGPoint)origin
+                twitterAccount:(NSString *)twitterAccount
+                       andSize:(CJMTwitterFollowButtonSize)size {
     
-    self.twitterAccount = account; 
-    CGRect buttonFrame = CGRectMake(origin.x, origin.y, buttonSize.width, buttonSize.height);
-    self = [super initWithFrame:buttonFrame];
-    if (self) 
-    {
-        if(self.isSmall)
-            [self setBackgroundImage:[UIImage imageNamed:@"follow-me-small"] forState:UIControlStateNormal];
-        else
-            [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+    CGRect frame = CGRectMake(origin.x, origin.y, 1, 1);
+    
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.twitterAccount = twitterAccount;
+        self.buttonSize     = size;
         
         [self addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
 
--(void)buttonTapped
-{
+
+- (void)buttonTapped {
     NSArray *urls = [NSArray arrayWithObjects:
                      @"twitter://user?screen_name={handle}", // Twitter
                      @"tweetbot:///user_profile/{handle}", // TweetBot
@@ -72,48 +55,58 @@
     UIApplication *application = [UIApplication sharedApplication];
     
     for (NSString *candidate in urls) {
-        NSURL *url = [NSURL URLWithString:[candidate stringByReplacingOccurrencesOfString:@"{handle}" withString:twitterAccount]];
-        if ([application canOpenURL:url]) 
-        {
+        NSURL *url = [NSURL URLWithString:[candidate stringByReplacingOccurrencesOfString:@"{handle}" withString:self.twitterAccount]];
+        if ([application canOpenURL:url]) {
             [application openURL:url];
+            // Stop trying after the first URL that succeeds
             return;
         }
     }
-    
 }
 
--(void)setIsSmall:(BOOL)shouldBeSmall
-{
-    isSmall = shouldBeSmall;
+
+- (void)setButtonSize:(CJMTwitterFollowButtonSize)size {
+
+    // Set the iVar
+    _buttonSize = size;
     
-    CGSize buttonSize;
-    if(isSmall)
-    {
-        buttonSize = CGSizeMake(61, 20);
-        [self setBackgroundImage:[UIImage imageNamed:@"follow-me-small"] forState:UIControlStateNormal];
+    // Process it
+    CGSize sizeForButtonFrame;
+    
+    if (self.buttonSize == CJMButtonSizeSmall) {
+        sizeForButtonFrame = CGSizeMake(61, 20);
+        [self setBackgroundImage:[UIImage imageNamed:@"CJMFollowMeButtonSmall"] forState:UIControlStateNormal];
     }
-    else 
-    {
-        buttonSize = CGSizeMake(122, 40);
-        [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+    else {
+        sizeForButtonFrame = CGSizeMake(122, 40);
+        [self setBackgroundImage:[UIImage imageNamed:@"CJMFollowMeButtonLarge"] forState:UIControlStateNormal];
     }
     
-    CGRect buttonFrame = CGRectMake(self.frame.origin.x, self.frame.origin.y, buttonSize.width, buttonSize.height);
-    
+    CGRect buttonFrame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeForButtonFrame.width, sizeForButtonFrame.height);
     [self setFrame:buttonFrame];
 }
 
--(void)awakeFromNib
-{
+
+- (void)awakeFromNib {
     [super awakeFromNib];
-    if(self)
-    {
-        [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, 122, 40)];
-        [self setBackgroundImage:[UIImage imageNamed:@"follow-me"] forState:UIControlStateNormal];
+    
+    if(self) {
+        self.buttonSize     = CJMButtonSizeLarge;
+        
+        // Don't overwrite twitter account if it was set by a runtime attribute
+        if (!self.twitterAccount) {
+            self.twitterAccount = @"not-configured";
+        }
+        
         [self addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
 
+- (void)setValue:(id)value forKey:(NSString *)key {
+    if ([key isEqualToString:@"twitterAccount"]) {
+        self.twitterAccount = value;
+    }
+}
 
 @end
