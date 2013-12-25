@@ -4,6 +4,12 @@ A `UIButton` subclass which mimics the Twitter follow button and will open the p
 
 <center><img src="https://raw.github.com/chrismaddern/Follow-Me-On-Twitter-iOS-Button/master/CJMTwitterFollowButton/Resources/CJMFollowMeButtonSmall.png" style="margin: 0 auto; " /></center>
 
+### Installation
+The easiest way is to use CocoaPods. If you don't already, here's a [guide](http://guides.cocoapods.org/using/getting-started.html).
+```
+pod 'CJMTwitterFollowButton', '~>0.1.0'
+```
+
 ### Usage
 The `CJMTwitterFollowButton` can be created in Interface Builder by adding a `UIButton` and changing it's class to `CJMTwitterFollowButton` or in code using the initialiser:
 
